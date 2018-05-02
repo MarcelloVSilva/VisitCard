@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_margin="0sp"
+    android:background="@drawable/relative_layout_background"
+    tools:context="com.example.marcello.visitcard.MainActivity">
+
+    <ImageView
+        android:id="@+id/profile_img"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:src="@mipmap/profile" />
+
+    <TextView
+        android:id="@+id/my_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/my_age"
+        android:layout_alignStart="@+id/my_age"
+        android:layout_below="@+id/my_graduation"
+        android:layout_marginTop="25dp"
+        android:text="@string/my_work" />
+
+    <TextView
+        android:id="@+id/my_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/my_name"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="22dp"
+        android:text="@string/my_age" />
+
+    <TextView
+        android:id="@+id/my_graduation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/my_name"
+        android:layout_alignStart="@+id/my_name"
+        android:layout_below="@+id/profile_img"
+        android:text="@string/my_university" />
+
+    <TextView
+        android:id="@+id/instagram_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_age"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="96dp"
+        android:layout_toEndOf="@+id/google_icon"
+        android:layout_toRightOf="@+id/google_icon"
+        android:text="@string/my_ig" />
+
+    <TextView
+        android:id="@+id/twitter_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/instagram_text"
+        android:layout_alignStart="@+id/instagram_text"
+        android:layout_below="@+id/instagram_text"
+        android:layout_marginTop="28dp"
+        android:text="@string/my_twt" />
+
+    <TextView
+        android:id="@+id/gmail_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/twitter_text"
+        android:layout_alignStart="@+id/twitter_text"
+        android:layout_below="@+id/twitter_text"
+        android:layout_marginTop="33dp"
+        android:text="@string/my_google" />
+
+    <ImageView
+        android:id="@+id/instagram_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/twitter_text"
+        android:layout_alignLeft="@+id/twitter_icon"
+        android:layout_alignStart="@+id/twitter_icon"
+        app:srcCompat="@mipmap/instagram" />
+
+    <ImageView
+        android:id="@+id/twitter_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/gmail_text"
+        android:layout_alignLeft="@+id/google_icon"
+        android:layout_alignStart="@+id/google_icon"
+        app:srcCompat="@mipmap/twitter" />
+
+    <ImageView
+        android:id="@+id/google_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/gmail_text"
+        android:layout_alignEnd="@+id/profile_img"
+        android:layout_alignRight="@+id/profile_img"
+        app:srcCompat="@mipmap/google" />
+
+</RelativeLayout>
+

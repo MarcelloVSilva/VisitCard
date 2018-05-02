@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Marcello Silva</string>
+    <string name="my_work">Web Developer</string>
+    <string name="my_university">UFG - Sistemas de Informação</string>
+    <string name="my_age">22 anos</string>
+    <string name="my_ig">"@narcello"</string>
+    <string name="my_twt">"@eusoumarcellov"</string>
+    <string name="my_google">"marcellovcs@gmail.com"</string>
+</resources>

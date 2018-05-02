@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <rotate
+            android:fromDegrees="42"
+            android:toDegrees="0"
+            android:pivotX="55%"
+            android:pivotY="88.6%" >
+            <shape android:shape="rectangle">
+                <gradient
+                    android:angle="90"
+                    android:endColor="@color/endColorGradient"
+                    android:centerColor="@color/centerColorGradient"
+                    android:startColor="@color/startColorGradient"
+                    android:type="linear" />
+                <!-- draw 35 dp radius for each corner -->
+                <corners
+                    android:radius="10dp"/>
+            </shape>
+        </rotate>
+    </item>
+</selector>
